@@ -12,14 +12,31 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: #FFFFFF;
-    width: 300px;
+    width: 330px;
+    height: auto;
     margin-top: 250px;
     border-radius: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 -2px 110px 0 rgba(0, 0, 0, 0.1);
     padding: 10px;
 }
 
 
+hr {
+    position: ;
+    width: 100%;
+    
+}
+
+p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #6C727F;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 0;
+}
 .card img {
     padding: 5px;
     border-radius: 15px;
@@ -34,10 +51,14 @@ body {
 
 span {
     font-size: 10px;
+    font-weight: 600;
     background-color: #E6D6FC;
     color: #883AE1;
     margin-right: auto;
+    margin-top: 10px;
     padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 15px;
 
 }
