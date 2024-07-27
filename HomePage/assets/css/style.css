@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.nav {
+    list-style: none;
+}
+
+.nav li{
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.button {
+    background-color: #d2d2d2;
+    background-image: url('../svg/Sun_fill.svg');
+    background-repeat: no-repeat;
+    background-position: 60px;
+    width: 95px;
+    height: 45px;
+    border-radius: 200px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
+
+.button::before {
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 200px;
+    margin: 2px;
+    transition: 0.2s;
+}
+
+/*This toggles dark mode*/
+input + .button::before{
+    background-image: url("../svg/Moon_fill.svg");
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+
+
+/*This toggles light mode*/
+input:checked + .button {
+    background-image: url("../svg/Moon_fill_light.svg");
+    background-size: 1.5rem;
+    background-position: 15px;
+    background-repeat: no-repeat;
+    background-color: #223344;
+}
+
+input:checked + html {
+    background-color: red;
+}
+
+input:checked +.button::before {
+    background-image: url("../svg/Sun_fill.svg");
+}
+
+input:checked + .button::before {
+    transform: translate(50px);
+}
+
+input {
+    display: none;
+}
