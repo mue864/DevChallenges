@@ -5,11 +5,27 @@
     font-size: 20px;
 }
 
+body {
+    background-color: #F2F9FE;
+    height: 100vh;
+    transition: 0.2s ease;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+}
+
+#current {
+    color: #223344;
 }
 
 .nav {
@@ -19,11 +35,12 @@ header {
 .nav li{
     display: inline-block;
     padding: 0px 40px;
+    
 }
 
 .nav li a {
     text-decoration: none;
-    color: black;
+    color: #909193;
 }
 
 .button {
@@ -69,9 +86,6 @@ input:checked + .button {
     background-color: #223344;
 }
 
-input:checked + html {
-    background-color: red;
-}
 
 input:checked +.button::before {
     background-image: url("../svg/Sun_fill.svg");
@@ -84,3 +98,72 @@ input:checked + .button::before {
 input {
     display: none;
 }
+
+.container {
+    margin-top: 40px;
+    margin-left: 30px;
+    display: flex;
+}
+
+.content {
+    position: relative;
+    left: 8rem;
+    width: 25%;
+}
+
+#heading {
+    font-size: 60px;
+    font-weight: 700;
+    color: #223344;
+    margin : 20px 0px;
+}
+
+#sub-heading {
+    font-size: 18px;
+    color: #909193;
+}
+
+.links {
+    margin: 30px 0;
+}
+
+
+
+#hero {
+    width: 60%;
+    position: relative;
+    left: 20rem;
+}
+
+
+.big {
+    padding: 20px 30px;
+    margin-right: 20px;
+    border: none;
+    background-color: #2A4DD0;
+    color: #F2F9FE;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+a {
+    font-weight: 600;
+}
+
+.info-text {
+    display: flex;
+}
+
+.info-text {
+    position: absolute;
+    bottom: 11rem;
+    left: 9rem;
+    color: #909193;
+}
+
+#done {
+    margin-left: 40px;
+}
+
