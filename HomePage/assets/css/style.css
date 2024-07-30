@@ -101,6 +101,21 @@ input {
     display: none;
 }
 
+.hamburger {
+    display: none;
+    margin-bottom: 43px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
 .container {
     margin-top: 40px;
     display: flex;
@@ -183,7 +198,7 @@ input {
 .demo {
     padding: 20px 30px;
     border: none;
-    background-color: #F2F9FE;
+    background-color: transparent;
     color: #2A4DD0;
     border-radius: 15px;
     font-size: 1rem;
@@ -253,6 +268,12 @@ a {
 }
 
 @media(max-width: 640px) {
+
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
     
     nav li a{
         transition: 0.2s ease-in;
