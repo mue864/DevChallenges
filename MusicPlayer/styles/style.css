@@ -1,0 +1,109 @@
+:root {
+    --text_color: #E5E7EB;
+    --button_color: #C93B76;
+    --card_color2: #121826a6;
+    --bar_color: #E5E7EB;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../assets/img/bg.jpg");
+}
+.inter{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .song_info {
+    margin-top: 0.70rem;
+  }
+.song_info #song_name {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--text_color);
+}
+
+.song_info #artist {
+    font-size: 0.75rem;
+    text-align: center;
+    color: var(--text_color);
+
+}
+
+
+#cover {
+    width: 300px;
+    margin-left: 24px;
+    margin-top:20px;
+    border-radius: 15px;
+}
+
+.section-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+}
+.card {
+    background-color: var(--card_color2);
+    width: 350px;
+    height: 550px;
+    position: relative;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.song_bar {
+    width: 300px;
+    height: 5px;
+    background-color: var(--bar_color);
+    border-radius: 25px;
+    position: relative;
+    left: 23px;
+    margin-top: 3rem;
+}
+
+.bar {
+    width: 50px;
+    height: 5px;
+    background-color: var(--button_color);
+    border-radius: 25px;
+}
+
+.previous, .next, .play {
+    display: inline;
+}
+
+.buttons {
+    text-align: center;
+    position: relative;
+    top: 3rem;
+}
+
+#next_btn {
+    position: relative;
+    left: 1rem;
+    bottom: 0.5rem;
+}
+
+#previous_btn {
+    position: relative;
+    right: 1rem;
+    bottom: 0.5rem;
+}
+
+#play_btn {
+    background-color: var(--button_color);
+    width: 50px;
+    border-radius: 50%;
+}
+
+

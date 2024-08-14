@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!--Css style-->
+    <link href="./styles/style.css" rel="stylesheet">
+
+    <title>Music Player</title>
+</head>
+<body class="inter">
+    <div class="section-card">
+        <div class="card">
+            <!--Should dynamically load as per song-->
+           <img src="./assets/img/cover-1.png" alt="song_cover" id="cover">
+            
+            <div class="song_info">
+                <h3 id="song_name">Song Name</h3>
+                <p id="artist">Artist</p>
+            </div>
+            <div class="song_bar">
+                <div class="bar"></div>
+            </div>
+            <div class="buttons">
+                <!--Previous-->
+                <div class="previous">
+                    <img src="./assets/img/Stop_and_play_fill-1.svg" alt="previous" id="previous_btn">
+                </div>
+                <!--play-->
+                <div class="play">
+                    <img src="./assets/img/Play_fill.svg" alt="Play" id="play_btn">
+                </div>
+                <!--Next-->
+                <div class="next">
+                    <img src="./assets/img/Stop_and_play_fill.svg" alt="next" id="next_btn">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
