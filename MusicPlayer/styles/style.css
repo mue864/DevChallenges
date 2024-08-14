@@ -3,6 +3,7 @@
     --button_color: #C93B76;
     --card_color2: #121826a6;
     --bar_color: #E5E7EB;
+    --secondary: #4D5562;
 
 }
 
@@ -34,10 +35,25 @@ body {
 .song_info #artist {
     font-size: 0.75rem;
     text-align: center;
-    color: var(--text_color);
-
+    color: var(--secondary);
+    margin-top: 1rem;
 }
 
+.duration_infomation span{
+    color: var(--secondary);
+}
+
+.minutes_passed {
+    position: relative;
+    top: 1.75rem;
+    left: 1.37rem;
+}
+
+.total_minutes {
+    position: relative;
+    right: -15.6rem;
+    top: 1.75rem;
+}
 
 #cover {
     width: 300px;
@@ -68,7 +84,7 @@ body {
     border-radius: 25px;
     position: relative;
     left: 23px;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .bar {
@@ -86,13 +102,30 @@ body {
     text-align: center;
     position: relative;
     top: 3rem;
+    transition: 0.3s ease;
 }
+
+.previous_btn:active {
+    transform: scale(1.1);
+}
+
+.next_btn:active {
+    transform: scale(1.1);
+}
+
+.play_btn:active {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+}
+
 
 #next_btn {
     position: relative;
     left: 1rem;
     bottom: 0.5rem;
 }
+
+
 
 #previous_btn {
     position: relative;
