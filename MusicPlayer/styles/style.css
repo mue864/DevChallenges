@@ -88,7 +88,7 @@ body {
 }
 
 .bar {
-    width: 50px;
+    width: 0;
     height: 5px;
     background-color: var(--button_color);
     border-radius: 25px;
