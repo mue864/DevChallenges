@@ -1,0 +1,18 @@
+{
+    "musicfiles": [
+        {
+            "song":"music_files/forest-lullaby-110624",
+            "cover": "assets/img/cover-2.png",
+            "name": "Forest Lullaby",
+            "artist": "Lesfm"
+        },
+
+        {
+            "song": "music_files/lost-in-city-lights-145038",
+            "cover": "assets/img/cover-1.png",
+            "name": "Lost in city Lights",
+            "artist": "Cosmo Sheldrake"
+        }
+        
+    ]
+}
