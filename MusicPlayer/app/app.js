@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const minutesPassed = document.querySelector('.minutes_passed');
             const totalMinutes = document.querySelector('.total_minutes')
             const bar = document.querySelector('.bar');
+            jkjsdj
 
             function loadingSong(index) {
                 const song = musicfiles[index];
