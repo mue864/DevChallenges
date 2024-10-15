@@ -7,31 +7,98 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
+    <section id="page1">
+
         <div class="card">
             <div class="card-contents">
                 <div class="card-details">
                     <h3 class="title">Register</h3>
                     <div class="input-components">
                         <div class="name-input">
-                            <p class="card-text-p">Name</p>
-                            <input type="text" placeholder="enter your name" class="input">
+                            <p class="card-text-p input-text">Name</p>
+                            <input type="text" placeholder="enter your name" class="input" id="nameInput" required>
                         </div>
         
                         <div class="email-input">
-                            <p class="card-text-p">Email</p>
-                            <input type="email" name="mail" placeholder="example@gmail.com" class="input">
+                            <p class="card-text-p input-text">Email</p>
+                            <input type="email" name="mail" placeholder="example@gmail.com" class="input" id="emailInput" required>
                         </div>
-                        
+
                         <div class="btn-container">
-                            <button class="btn btn-submit" onclick="togglePage()">Continue</button>
+                            <button class="btn btn-submit" onclick="togglePage1()">Continue</button>
                         </div>
                         
                     </div>
                 </div>
             </div>
-            
+
         </div>    
     </section>
+
+    
+
+
+    <section id="page2">
+
+        <div class="card">
+            <div class="card-contents">
+                <div class="card-details">
+                    <h3 class="title">Which topics are you interested in?</h3>
+                    <div class="input-components">
+                        <div class="btn-choose-container" onclick="activateBtn()">
+                             Software Development
+                        </div>
+
+                        <div class="btn-choose-container" onclick="activateBtn()">
+                            User Experience
+                        </div>
+
+                        <div class="btn-choose-container" onclick="activateBtn()">
+                            Graphic Design
+                        </div>
+                        
+                        <div class="btn-container">
+                            <button class="btn btn-submit" onclick="togglePage2()">Continue</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>    
+    </section>
+
+    <section id="page3">
+
+        <div class="card">
+            <div class="card-contents">
+                <div class="card-details">
+                    <h3 class="title">Summary</h3>
+                    <div class="input-components">
+                        <p class="card-text-p">Name: <span id="userName"></span></p>
+                        <p class="card-text-p">Email: <span id="userEmail"></span></p>
+
+                        <p class="card-text-p heading-p">Topics:</p>
+                        <ul id="listItems">
+
+                        </ul>
+                        <div class="btn-container">
+                            <button class="btn btn-submit" onclick="togglePage()">Confirm</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>    
+    </section>
+
+    <div class="pagination">
+        <span class="card-text-p pagtext">Step <span id="pageNumber">1</span> of 3</span>
+        <span class="active visited"></span>
+        <span class="dots pg1"></span>
+        <span class="dots"></span>
+    </div>
+    <script src="./app.js"></script>
 </body>
 </html>
