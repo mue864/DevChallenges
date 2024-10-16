@@ -47,7 +47,10 @@ function extractInfo() {
 }
 
 function togglePage2() {
-    const pageVisited = document.querySelector(".pg1");
+    if (selectedTopics.length === 0) {
+        alert("Select one or more items");
+    } else {
+        const pageVisited = document.querySelector(".pg1");
     page2.style.display  = "none";
     page3.style.display = "flex";
 
@@ -63,10 +66,13 @@ function togglePage2() {
     changeSecondDot.classList.remove('dots');
 
     toggleResults();
+    }
+ 
+    
 }
 
 function togglePage3() {
-
+    alert("✅ Success");
 }
 
 
