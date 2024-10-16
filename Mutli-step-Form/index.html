@@ -25,7 +25,7 @@
                         </div>
 
                         <div class="btn-container">
-                            <button class="btn btn-submit" onclick="togglePage1()">Continue</button>
+                            <button class="btn btn-submit" onclick="validateAndProceed()">Continue</button>
                         </div>
                         
                     </div>
@@ -45,15 +45,15 @@
                 <div class="card-details">
                     <h3 class="title">Which topics are you interested in?</h3>
                     <div class="input-components">
-                        <div class="btn-choose-container" onclick="activateBtn()">
+                        <div class="btn-choose-container" onclick="toggleSelection('softwareDev', this)" id="softwareDev">
                              Software Development
                         </div>
 
-                        <div class="btn-choose-container" onclick="activateBtn()">
+                        <div class="btn-choose-container" onclick="toggleSelection('userExperience', this)" id="userExperience">
                             User Experience
                         </div>
 
-                        <div class="btn-choose-container" onclick="activateBtn()">
+                        <div class="btn-choose-container" onclick="toggleSelection('graphicDesign', this)" id="graphicDesign">
                             Graphic Design
                         </div>
                         
@@ -71,11 +71,11 @@
     <section id="page3">
 
         <div class="card">
-            <div class="card-contents">
+            <div class="card-contents results">
                 <div class="card-details">
                     <h3 class="title">Summary</h3>
                     <div class="input-components">
-                        <p class="card-text-p">Name: <span id="userName"></span></p>
+                        <p class="card-text-p">Name: <span id="user"></span></p>
                         <p class="card-text-p">Email: <span id="userEmail"></span></p>
 
                         <p class="card-text-p heading-p">Topics:</p>
