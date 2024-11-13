@@ -3,72 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 
-    <!--Poppins font-->
+    <!-- poppins font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
     <title>Alarado</title>
 </head>
-<body class="poppins-regular">
-    <header>
-            <img src="./assets/svg/alarado-icon-homepage.svg" alt="home-icon" id="home-icon">
-            <nav>
-                <ul class="nav">
-                    <li> <a href="#" id="current">About Us</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Resource</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+<body class="font-poppins bg-veryLightBlue">
+    <nav class="relative container mx-auto pt-4">
+        <div class="flex flex-row justify-between ">
+            <img src="./assets/svg/alarado-icon-homepage.svg" alt="">
 
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
-            
-            <input type="checkbox" id="check" checked>
-            <label for="check" class="button"></label>   
-    </header>
-
-    <div class="container">
-        <div class="content item">
-        <div class="main-items">
-        <p>😎 SIMPLE WAY TO COMMUNICATE</p>
-        <p id="heading">Actions for Accessibility in Design</p>
-        
-        </div>
-        
-        <div class="sub-items">
-
-            <p id="sub-heading">The fastest way to build and deploy websites with resusable components.</p>
-            <button class="big">
-                GET STARTED
-            </button>
-            <button class="big demo">
-                <a href="#">Get live demo</a>
-            </button>
-            
-            <div class="light-text">
-                <img src="./assets/svg/Done_ring_round_fill.svg" alt="done" class="done">
-                <p id="credit">No credit card required</p>
-                <img src="./assets/svg/Done_ring_round_fill.svg" alt="done" class="done" id="done-left">
-                <p id="software">No software to install</p>
+            <div class="hidden md:flex space-x-10 items-center">
+                <a href="#" class="text-sm  font-semibold underline underline-offset-4 text-darkBlue">About Us</a>
+                <a href="#" class="text-sm text-blueGray font-semibold">Product</a>
+                <a href="#" class="text-sm text-blueGray font-semibold">Resource</a>
+                <a href="#" class="text-sm text-blueGray font-semibold">Contact</a>
             </div>
-            
-    
-        </div>
-            <!-- <a href="#">Get live demo</a> -->
-        
 
+            <a href="#" class="hidden md:block rounded-full bg-veryDarkBlue p-3 text-white px-6 hover:bg-darkBlue ">Theme</a>
         </div>
+    </nav>
 
-        <div class="image item">
-            <img src="./assets/img/hero-image-simple-homepage.png" alt="hero" id="hero">
+    <section id="hero" class="flex">
+        <div class="container mx-auto pt-7">
+            <div class="flex flex-col-reverse md:flex-row items-center">
+                <div class="w-1/2">
+                    <p class="text-blueGray font-semibold">😎 Simple way to communicate</p>
+                    <h1 class="text-blueGray text-6xl font-bold pt-5 ">Actions for Accessibility in Design</h1>
+                    <p class="text-blueGray font-medium pt-4">The fastest way to build and deploy websites with reusable components.</p>
+
+                    <div class="button mt-5 flex space-x-5">
+                        <a href="#" class="rounded-lg bg-darkBlue p-2 px-5 font-semibold text-white">Get Started</a>
+
+                        <a href="#" class="text-darkBlue text-sm font-bold mt-2 underline underline-offset-4">Get live demo</a>
+                    </div>
+
+                    <!-- checkmarks -->
+                    <div class="flex mt-8 space-x-3">
+                        <div>
+                            <img src="./assets/svg/Done_ring_round_fill.svg" alt="ring" class="inline">
+                            <p class="inline text-sm text-blueGray font-medium">No credit card required</p>
+                        </div>
+
+                        <div class="">
+                            <img src="./assets/svg/Done_ring_round_fill.svg" alt="ring" class="inline">
+                            <p class="inline text-sm text-blueGray font-medium">No software to install</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-1/2">
+                    <img src="./assets/img/hero-image-simple-homepage.png" alt="">
+                </div>
+            </div>
         </div>
-    </div>
-    <script src="./assets/scripts/app.js"></script>
+    </section>
 </body>
 </html>
